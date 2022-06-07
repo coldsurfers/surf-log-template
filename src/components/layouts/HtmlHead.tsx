@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Head from 'next/head'
+import { homepage } from '../../../package.json'
 
 const HtmlHead: FC = () => {
     return (
@@ -87,7 +88,7 @@ const HtmlHead: FC = () => {
             <meta name="theme-color" content="#ffffff" />
             <meta
                 property="og:image"
-                content="https://blog.coldsurf.io/favicons/apple-icon.png"
+                content={`${homepage}/favicons/apple-icon.png`}
             />
         </Head>
     )
